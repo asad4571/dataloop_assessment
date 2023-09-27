@@ -5,8 +5,6 @@ dl.login()
 project = dl.projects.get(project_id='ee06dd20-8c7e-4933-a67b-02b4de998a74')
 dataset = project.datasets.get(dataset_name='new_dataset')
 
-# Local path to the corresponding annotations - make sure the file names fit
-local_annotations_path = r'C:/home/project/annotations_folder'
 
 dataset.items.upload(local_path=r'C:/Users/asad.abbas/images_folder',
                      local_annotations_path=r'C:/Users/asad.abbas/json_folder_1')
